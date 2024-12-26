@@ -1,0 +1,25 @@
+Japan Travel Blog - README
+Overview
+The Japan Travel Blog is a web application designed to showcase the beauty and culture of Japan. It provides users with information about various travel destinations, an about section detailing the blog's purpose, and a contact form for inquiries. The website features a visually appealing design with responsive layouts and interactive elements.
+
+Features
+Home Page: Highlights featured destinations with images and descriptions.
+About Page: Provides information about the blog and its mission.
+Contact Page: Includes a form for users to submit inquiries or feedback.
+Responsive Design: The website is optimized for various screen sizes, ensuring a good user experience on both desktop and mobile devices.
+Interactive Elements: Hover effects and transitions enhance user engagement.
+
+Technologies Used
+HTML: Structure of the web pages.
+CSS: Styling and layout of the website, including responsive design.
+JavaScript: Form validation to ensure all fields are filled before submission.
+Images: Various images used for backgrounds and content representation.
+
+Instructions for Running the Project Locally
+
+1. Clone the Repository: git clone <repository-url>
+2. Navigate to the Project Directory: cd <project-directory>
+3. Open the HTML Files: Open index.html, about.html, or contact.html in your preferred web browser.
+4. Ensure All Assets are Available: Make sure that all images and stylesheets are in the correct directories as referenced in the HTML files.
+5. Test the Contact Form: Fill out the contact form and submit to see the validation in action.
+

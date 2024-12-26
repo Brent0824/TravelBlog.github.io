@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    font-family: 'Arial, sans-serif';
+}
+
+.index-page {
+    background-image: url('japan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-page, .contact-page {
+    background: linear-gradient(to bottom, #ffb3c1, #ff6f91);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(139, 0, 0, 0.7);
+}
+
+main {
+    padding: 20px;
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #b22222;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-bar li {
+    margin: 0 15px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    font-weight: bold;
+}
+
+.nav-bar a:hover {
+    background-color: #8b0000;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    color: white;
+    font-family: 'Yu Gothic', sans-serif;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.featured-destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.featured-destinations article {
+    margin: 20px 0;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: 0.3s;
+    transition: opacity 0.5s ease;
+}
+
+.featured-destinations article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #c46969;
+}
+
+.featured-destinations img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .featured-destinations article {
+        padding: 20px;
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar a {
+        padding: 10px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .featured-destinations article {
+        padding: 15px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #b22222;
+    color: white;
+    font-family: 'Yu Gothic', sans-serif;
+}
+
+.about {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background: rgba(139, 0, 0, 0.7);
+}
+
+.about img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about:hover {
+    background: rgba(134, 40, 40, 0.7);
+    transform: scale(1.02);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.about img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.contact form {
+    background-color: #fff8f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact:hover {
+    background-color: #b22222;
+    transform: scale(1.02);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact label {
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #b22222;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+}
+
+.contact input {
+    width: calc(30% - 22px);
+}
+
+.contact textarea {
+    width: calc(100% - 22px);
+    height: 100px;
+}
+
+.contact button {
+    background-color: #b22222;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #8b0000;
+}
